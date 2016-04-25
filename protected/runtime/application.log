@@ -1,0 +1,276 @@
+2016/03/22 23:23:33 [error] [php] include(User.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (Z:\home\party.com\www\yii\framework\YiiBase.php:432)
+Stack trace:
+#0 Z:\home\party.com\www\yii\framework\gii\components\UserIdentity.php(14): spl_autoload_call()
+#1 Z:\home\party.com\www\yii\framework\gii\models\LoginForm.php(26): UserIdentity->authenticate()
+#2 Z:\home\party.com\www\yii\framework\validators\CInlineValidator.php(42): LoginForm->authenticate()
+#3 Z:\home\party.com\www\yii\framework\validators\CValidator.php(201): CInlineValidator->validateAttribute()
+#4 Z:\home\party.com\www\yii\framework\base\CModel.php(159): CInlineValidator->validate()
+#5 Z:\home\party.com\www\yii\framework\gii\controllers\DefaultController.php(43): LoginForm->validate()
+#6 Z:\home\party.com\www\yii\framework\web\actions\CInlineAction.php(49): DefaultController->actionLogin()
+#7 Z:\home\party.com\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#8 Z:\home\party.com\www\yii\framework\web\CController.php(286): DefaultController->runAction()
+#9 Z:\home\party.com\www\yii\framework\web\CController.php(265): DefaultController->runActionWithFilters()
+#10 Z:\home\party.com\www\yii\framework\web\CWebApplication.php(282): DefaultController->run()
+#11 Z:\home\party.com\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#12 Z:\home\party.com\www\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#13 Z:\home\party.com\www\index.php(13): CWebApplication->run()
+REQUEST_URI=/?r=gii/default/login
+in Z:\home\party.com\www\index.php (13)
+2016/03/22 23:42:23 [error] [php] session_regenerate_id() [<a href='function.session-regenerate-id'>function.session-regenerate-id</a>]: Cannot regenerate session id - headers already sent (Z:\home\party.com\www\yii\framework\web\CHttpSession.php:182)
+Stack trace:
+#0 Z:\home\party.com\www\yii\framework\web\auth\CWebUser.php(233): CWebUser->changeIdentity()
+#1 Z:\home\party.com\www\yii\framework\gii\models\LoginForm.php(44): CWebUser->login()
+#2 Z:\home\party.com\www\yii\framework\gii\controllers\DefaultController.php(44): LoginForm->login()
+#3 Z:\home\party.com\www\yii\framework\web\actions\CInlineAction.php(49): DefaultController->actionLogin()
+#4 Z:\home\party.com\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 Z:\home\party.com\www\yii\framework\web\CController.php(286): DefaultController->runAction()
+#6 Z:\home\party.com\www\yii\framework\web\CController.php(265): DefaultController->runActionWithFilters()
+#7 Z:\home\party.com\www\yii\framework\web\CWebApplication.php(282): DefaultController->run()
+#8 Z:\home\party.com\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 Z:\home\party.com\www\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 Z:\home\party.com\www\index.php(13): CWebApplication->run()
+REQUEST_URI=/?r=gii/default/login
+in Z:\home\party.com\www\index.php (13)
+2016/03/23 00:05:32 [error] [php] Object of class Region could not be converted to string (Z:\home\party.com\www\yii\framework\web\helpers\CHtml.php:2543)
+Stack trace:
+#0 Z:\home\party.com\www\protected\views\organDRATC\_form.php(30): CActiveForm->dropDownList()
+#1 Z:\home\party.com\www\yii\framework\web\CBaseController.php(126): require()
+#2 Z:\home\party.com\www\yii\framework\web\CBaseController.php(95): OrganDRATCController->renderInternal()
+#3 Z:\home\party.com\www\yii\framework\web\CController.php(869): OrganDRATCController->renderFile()
+#4 Z:\home\party.com\www\protected\views\organDRATC\create.php(18): OrganDRATCController->renderPartial()
+#5 Z:\home\party.com\www\yii\framework\web\CBaseController.php(126): require()
+#6 Z:\home\party.com\www\yii\framework\web\CBaseController.php(95): OrganDRATCController->renderInternal()
+#7 Z:\home\party.com\www\yii\framework\web\CController.php(869): OrganDRATCController->renderFile()
+#8 Z:\home\party.com\www\yii\framework\web\CController.php(782): OrganDRATCController->renderPartial()
+#9 Z:\home\party.com\www\protected\controllers\OrganDRATCController.php(79): OrganDRATCController->render()
+#10 Z:\home\party.com\www\yii\framework\web\actions\CInlineAction.php(49): OrganDRATCController->actionCreate()
+#11 Z:\home\party.com\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams()
+#12 Z:\home\party.com\www\yii\framework\web\filters\CFilterChain.php(133): OrganDRATCController->runAction()
+#13 Z:\home\party.com\www\yii\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#14 Z:\home\party.com\www\yii\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#15 Z:\home\party.com\www\yii\framework\web\filters\CInlineFilter.php(58): OrganDRATCController->filterAccessControl()
+#16 Z:\home\party.com\www\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#17 Z:\home\party.com\www\yii\framework\web\CController.php(291): CFilterChain->run()
+#18 Z:\home\party.com\www\yii\framework\web\CController.php(265): OrganDRATCController->runActionWithFilters()
+#19 Z:\home\party.com\www\yii\framework\web\CWebApplication.php(282): OrganDRATCController->run()
+#20 Z:\home\party.com\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#21 Z:\home\party.com\www\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#22 Z:\home\party.com\www\index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=organDRATC/create
+in Z:\home\party.com\www\protected\views\organDRATC\_form.php (30)
+in Z:\home\party.com\www\protected\views\organDRATC\create.php (18)
+in Z:\home\party.com\www\protected\controllers\OrganDRATCController.php (79)
+2016/03/23 00:13:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "persona".' in Z:\home\party.com\www\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\home\party.com\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('persona')
+#1 Z:\home\party.com\www\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 Z:\home\party.com\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php?r=persona
+---
+2016/04/03 20:18:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "l/qwerty".' in Z:\home\security.com\www\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\home\security.com\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('l/qwerty')
+#1 Z:\home\security.com\www\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 Z:\home\security.com\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/l/qwerty
+---
+2016/04/03 20:19:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "qwerty".' in Z:\home\security.com\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 Z:\home\security.com\www\yii\framework\web\CController.php(270): CController->missingAction('qwerty')
+#1 Z:\home\security.com\www\yii\framework\web\CWebApplication.php(282): CController->run('qwerty')
+#2 Z:\home\security.com\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('log/qwerty')
+#3 Z:\home\security.com\www\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 Z:\home\security.com\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/log/qwerty
+---
+2016/04/03 20:20:04 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in Z:\home\security.com\www\yii\framework\web\CController.php:336
+Stack trace:
+#0 Z:\home\security.com\www\yii\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 Z:\home\security.com\www\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#2 Z:\home\security.com\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 Z:\home\security.com\www\yii\framework\web\CWebApplication.php(282): CController->run('register')
+#4 Z:\home\security.com\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('log/register')
+#5 Z:\home\security.com\www\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#6 Z:\home\security.com\www\index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/index.php/log/register
+---
+2016/04/03 20:26:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "index.php/log/register".' in Z:\home\security.com\www\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\home\security.com\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('index.php/log/r...')
+#1 Z:\home\security.com\www\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 Z:\home\security.com\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/nico
+---
+2016/04/03 20:27:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "index.php/log/register".' in Z:\home\security.com\www\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\home\security.com\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('index.php/log/r...')
+#1 Z:\home\security.com\www\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 Z:\home\security.com\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/nico
+---
+2016/04/03 20:27:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "l/qwert".' in Z:\home\security.com\www\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\home\security.com\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('l/qwert')
+#1 Z:\home\security.com\www\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 Z:\home\security.com\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/l/qwert
+---
+2016/04/03 20:28:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "l/qwert".' in Z:\home\security.com\www\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\home\security.com\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('l/qwert')
+#1 Z:\home\security.com\www\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 Z:\home\security.com\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/l/qwert
+---
+2016/04/03 20:28:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "l/qwert".' in Z:\home\security.com\www\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\home\security.com\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('l/qwert')
+#1 Z:\home\security.com\www\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 Z:\home\security.com\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/l/qwert
+---
+2016/04/03 20:28:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "l/qwert".' in Z:\home\security.com\www\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\home\security.com\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('l/qwert')
+#1 Z:\home\security.com\www\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 Z:\home\security.com\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/l/qwert
+---
+2016/04/03 20:28:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "l/qwert".' in Z:\home\security.com\www\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\home\security.com\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('l/qwert')
+#1 Z:\home\security.com\www\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 Z:\home\security.com\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/l/qwert
+---
+2016/04/03 20:28:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "l/qwert".' in Z:\home\security.com\www\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\home\security.com\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('l/qwert')
+#1 Z:\home\security.com\www\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 Z:\home\security.com\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/l/qwert
+---
+2016/04/03 20:29:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "l".' in Z:\home\security.com\www\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\home\security.com\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('l')
+#1 Z:\home\security.com\www\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 Z:\home\security.com\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/l/?permalink=789
+---
+2016/04/03 20:31:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "l/permalink=789".' in Z:\home\security.com\www\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\home\security.com\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('l/permalink=789')
+#1 Z:\home\security.com\www\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 Z:\home\security.com\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/l/permalink=789
+---
+2016/04/03 20:32:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "l/permalink=789".' in Z:\home\security.com\www\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\home\security.com\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('l/permalink=789')
+#1 Z:\home\security.com\www\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 Z:\home\security.com\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/l/permalink=789
+---
+2016/04/03 20:48:48 [error] [exception.CException] exception 'CException' with message 'LogController cannot find the requested view "hack".' in Z:\home\security.com\www\yii\framework\web\CController.php:878
+Stack trace:
+#0 Z:\home\security.com\www\yii\framework\web\CController.php(782): CController->renderPartial('hack', Array, true)
+#1 Z:\home\security.com\www\protected\controllers\LogController.php(35): CController->render('hack', Array)
+#2 Z:\home\security.com\www\yii\framework\web\actions\CInlineAction.php(49): LogController->actionHack()
+#3 Z:\home\security.com\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 Z:\home\security.com\www\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 Z:\home\security.com\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 Z:\home\security.com\www\yii\framework\web\CWebApplication.php(282): CController->run('hack')
+#7 Z:\home\security.com\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('log/hack')
+#8 Z:\home\security.com\www\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#9 Z:\home\security.com\www\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/log/hack
+---
+2016/04/03 20:49:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "AMEDIATEKA_files".' in Z:\home\security.com\www\yii\framework\web\CController.php:483
+Stack trace:
+#0 Z:\home\security.com\www\yii\framework\web\CController.php(270): CController->missingAction('AMEDIATEKA_file...')
+#1 Z:\home\security.com\www\yii\framework\web\CWebApplication.php(282): CController->run('AMEDIATEKA_file...')
+#2 Z:\home\security.com\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('log/AMEDIATEKA_...')
+#3 Z:\home\security.com\www\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 Z:\home\security.com\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/log/AMEDIATEKA_files/logotype.png
+HTTP_REFERER=http://security.com/log/hack
+---
+2016/04/03 20:49:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "amediateka.ru/static/img/background/bg_restricted.jpg".' in Z:\home\security.com\www\yii\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\home\security.com\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('amediateka.ru/s...')
+#1 Z:\home\security.com\www\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 Z:\home\security.com\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/amediateka.ru/static/img/background/bg_restricted.jpg
+HTTP_REFERER=http://security.com/log/hack
+---
+2016/04/03 21:36:41 [error] [exception.CException] exception 'CException' with message 'Link and its behaviors do not have a method or closure named "getId".' in Z:\home\security.com\www\yii\framework\base\CComponent.php:266
+Stack trace:
+#0 Z:\home\security.com\www\yii\framework\db\ar\CActiveRecord.php(227): CComponent->__call('getId', Array)
+#1 Z:\home\security.com\www\protected\controllers\LogController.php(26): CActiveRecord->__call('getId', Array)
+#2 Z:\home\security.com\www\protected\controllers\LogController.php(26): Link->getId()
+#3 [internal function]: LogController->actionRegister('hack_link')
+#4 Z:\home\security.com\www\yii\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(LogController), Array)
+#5 Z:\home\security.com\www\yii\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(LogController), Object(ReflectionMethod), Array)
+#6 Z:\home\security.com\www\yii\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 Z:\home\security.com\www\yii\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#8 Z:\home\security.com\www\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 Z:\home\security.com\www\yii\framework\web\CWebApplication.php(282): CController->run('register')
+#10 Z:\home\security.com\www\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('log/register')
+#11 Z:\home\security.com\www\yii\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#12 Z:\home\security.com\www\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/l/hack_link
+---
+2016/04/03 19:03:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /home/ubuntu/workspace/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/ubuntu/workspace/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 /home/ubuntu/workspace/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/ubuntu/workspace/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=https://security-nico19.c9users.io/
+---
+2016/04/24 13:07:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /home/ubuntu/workspace/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/ubuntu/workspace/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 /home/ubuntu/workspace/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/ubuntu/workspace/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=https://security-nico19.c9users.io/
+---
+2016/04/24 13:47:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /home/ubuntu/workspace/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/ubuntu/workspace/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 /home/ubuntu/workspace/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/ubuntu/workspace/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2016/04/24 13:48:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /home/ubuntu/workspace/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/ubuntu/workspace/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 /home/ubuntu/workspace/yii/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/ubuntu/workspace/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=https://security-nico19.c9users.io/log/hack
+---
